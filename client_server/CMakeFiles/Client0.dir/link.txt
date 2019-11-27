@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Client0.dir/client-side.cpp.o  -o Client0 

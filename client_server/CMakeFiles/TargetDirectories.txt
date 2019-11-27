@@ -1,0 +1,4 @@
+/home/nikita/develop/client_server/CMakeFiles/rebuild_cache.dir
+/home/nikita/develop/client_server/CMakeFiles/Server0.dir
+/home/nikita/develop/client_server/CMakeFiles/edit_cache.dir
+/home/nikita/develop/client_server/CMakeFiles/Client0.dir
