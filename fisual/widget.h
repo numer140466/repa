@@ -26,6 +26,9 @@ protected:
 
 public slots:
     void MyEventHandler();
+
+signals:
+    void MySignal(QString);
 };
 
 #endif // WIDGET_H

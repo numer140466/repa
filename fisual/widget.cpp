@@ -6,9 +6,15 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    setLayout(ui->verticalLayout);
     ui->MyLabel->setText("My first programm");
     QObject::connect(ui->MyPushButton1, SIGNAL(clicked()), this, SLOT(MyEventHandler()));
+    QObject::connect(this, SIGNAL(MySignal(QString)), ui->MyLineEdit2, SLOT(setText(QString)));
+    QObject::connect(this, SIGNAL(MySignal(QString)), ui->MyLabel, SLOT(setText(QString)));
+    ui->MyPushButton1->setEnabled(true);
+
 }
+
 
 void Widget::paintEvent(QPaintEvent *event)
 {
@@ -17,13 +23,14 @@ void Widget::paintEvent(QPaintEvent *event)
     // Set Brush
     painter.setPen(QPen(Qt::black, 1, Qt::SolidLine, Qt::FlatCap));
 
-    /* Check radio buttins
-     * */
-    //if(ui->radioButton_red->isChecked()){
+    // Check radio buttins
+
+    if(ui->MyPushButton1->isChecked()){
         // Draw red circle
         painter.setBrush(QBrush(Qt::red, Qt::SolidPattern));
         painter.drawEllipse(100, 50, 150, 150);
-    //}
+    }
+    this->update();
 }
 
 Widget::~Widget()
@@ -33,5 +40,6 @@ Widget::~Widget()
 
 void Widget::MyEventHandler()
 {
-    ui->MyLineEdit2->setText(ui->MyLineEdit1->text());
+   // ui->MyLineEdit2->setText(ui->MyLineEdit1->text());
+    emit MySignal(ui->MyLineEdit1->text());
 }
