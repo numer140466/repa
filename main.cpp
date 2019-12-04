@@ -11,13 +11,10 @@
 #include <string>
 
 #include <math.h>
+#include "client_side.h"
 
 const short len1=1;
 const short len2=2;
-
-
-
-
 
 void reader()
 {
@@ -130,7 +127,7 @@ void read_tlv(pack& pk, char* s0)
         {
             int prom=find_isum(j, len1+len2+3*(k+1),buffer2);
             pk.value.push_back(prom);
-            cout <<"k="<<k<< "pk.value[k]="<<pk.value[k] <<"\n";
+            //cout <<"k="<<k<< "pk.value[k]="<<pk.value[k] <<"\n";
         }
     }
 }
@@ -138,6 +135,9 @@ void read_tlv(pack& pk, char* s0)
 
 int main()
 {
+client_side cl;
+int test=cl.client_main();
+cout << "test=" <<test << "\n";
 
 int buffer_size=3;
 char* buffer = (char*)malloc(buffer_size);
