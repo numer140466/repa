@@ -19,7 +19,7 @@ class server_side
 {
     public:
         server_side(){};
-        virtual ~server_side();
+        /*virtual*/ ~server_side(){};
         int server_main();
 
     protected:

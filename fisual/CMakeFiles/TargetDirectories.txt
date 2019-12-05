@@ -1,0 +1,3 @@
+/home/nikita/new_project/repa/fisual/CMakeFiles/rebuild_cache.dir
+/home/nikita/new_project/repa/fisual/CMakeFiles/MyProg1.dir
+/home/nikita/new_project/repa/fisual/CMakeFiles/edit_cache.dir

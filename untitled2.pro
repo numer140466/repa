@@ -1,17 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-11-27T00:55:24
+# Project created by QtCreator 2019-12-05T00:10:57
 #
 #-------------------------------------------------
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4) {
-  QT += widgets
-  DEFINES += HAVE_QT5
-}
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = untitled1
+TARGET = untitled2
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use

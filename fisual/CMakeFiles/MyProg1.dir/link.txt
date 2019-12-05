@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/MyProg1.dir/main.cpp.o CMakeFiles/MyProg1.dir/widget.cpp.o  -o MyProg1  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5 
