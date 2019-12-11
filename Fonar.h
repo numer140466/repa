@@ -26,7 +26,6 @@ class Fonar
     protected:
 
     private:
-    bool condition=true;
     vector<int> color;
     /*package parser(string st)
     {

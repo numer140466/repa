@@ -11,9 +11,7 @@ int main(int argc, char *argv[])
 {
 
 //server_side sv;
-    client_side cl;
-//sv.server_main();
-int test=0;
+    //client_side cl;
 //int test=sv.server_main();
 
 

@@ -65,9 +65,10 @@ int server_side::server_main()
       if( sendto( s1, response, sizeof(response), 0, (struct sockaddr *)&addr, sizeof(addr) ) < 0 )
               perror("Error sending response");
       printf("Response send\n");
+      return 98;
 }
 
-server_side::~server_side()
+/*server_side::~server_side()
 {
     //dtor
-}
+}*/
